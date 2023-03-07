@@ -1,0 +1,337 @@
+.container{
+    width:100vw;
+}
+.nav-bar{
+    width:100%;
+    height: 100px;
+    padding:10px;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(180, 180, 218);
+}
+
+.nio-class-symbol-div{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:5px;
+    cursor:pointer;
+    
+}
+.nio-class-logo{
+    width:70px;
+    transition: 1s;
+}
+
+.nio-class-logo:hover{
+    transform: rotate(360deg);
+    width:70px
+}
+.nio-class-logo-text{
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 35px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nav-ul{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-li{
+    list-style-type:none;
+    margin:10px;
+    padding:5px;
+    font-size: 25px;
+    cursor:pointer
+}
+
+.nav-li:hover{
+    color:rgb(20, 70, 70);
+    background-color: rgb(69, 106, 106);
+    border-radius: 5px;
+}
+
+.nav-links{
+    text-decoration: none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+
+}
+.about-section{
+    height:200px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px;
+    background-color: rgb(162, 177, 191);
+}
+
+.about-logo{
+    width:120px;
+    transition: 1s;
+    cursor:pointer;
+}
+.about-logo:hover{
+    width:120px;
+    transform: rotate(360deg);  
+}
+
+.about-section-text-div{
+    margin:15px;   
+}
+.about-section-heading{
+    font-weight: 700;
+    font-size:30px;
+}
+.about-section-text{
+    font-size: 20px;
+}
+.footer{
+    background-color: black;
+    width:100%;
+    height:200px;
+    padding:10px
+}
+
+.footer-text1{  
+    color:white;  
+    text-align:center;  
+}
+.footer-text2{   
+    color:white;   
+    text-align:center;
+    font-size:20px;
+    padding:3px;
+    
+}
+.copyright-text{
+    color:white;   
+    text-align:center;
+    font-size:20px;
+    padding:3px;
+    text-decoration: none;
+}
+
+.copyright-text-link{
+    color:white;   
+    text-decoration: none;
+}
+
+.copyright-text-link:hover{
+    color:rgb(230, 92, 92);   
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 868px){
+    .about-section{
+        height:260px;
+        width:100%;
+    }
+    .about-logo{
+        width:140px;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height: 100vh;
+        background-color: rgb(76, 70, 108);
+        top:100px;
+        left:-100%;
+        z-index: 3;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    ul li{
+        display: block;
+        margin:50px 0;
+        line-height: 30px;
+
+    }
+    ul li:hover{
+       background-color: antiquewhite;
+
+    }
+
+ 
+
+    ul li a{
+        font-size:40px;
+        color:rgb(240, 240, 247)
+    }
+
+    a:hover{
+        background: none;
+        color:#111d27
+    }
+
+    #check:checked ~ ul {
+        left : 0;
+    }
+    .about-section{
+        height:400px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding:15px;
+        background-color: rgb(162, 177, 191);
+    }
+    
+    .about-logo{
+        width:140px;
+        transition: 1s;
+        cursor:pointer;
+    }
+    .about-section-heading{
+        font-weight: 700;
+        font-size:40px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 580px){
+
+    .nio-class-symbol-div{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding:5px;
+        cursor:pointer;
+        
+    }
+    .nio-class-logo{
+        width:55px;
+        transition: 1s;
+    }
+    
+    .nio-class-logo:hover{
+        transform: rotate(360deg);
+        width:50px
+    }
+    .nio-class-logo-text{
+        font-family: monospace;
+        font-weight: 600;
+        font-size: 25px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .about-section{
+        height:500px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding:10px;
+        background-color: rgb(162, 177, 191);
+    }
+    
+    .about-logo{
+        width:120px;
+        transition: 1s;
+        cursor:pointer;
+    }
+    .about-section-heading{
+        font-weight: 700;
+        font-size:30px;
+        text-align: center;
+    }
+  
+    .footer{
+        background-color: black;
+        width:100%;
+        height:250px;
+        padding:10px
+    }
+    
+    .footer-text1{  
+        color:white;  
+        text-align:center; 
+        font-size: 30px; 
+    }
+    .footer-text2{   
+        color:white;   
+        text-align:center;
+        font-size:15px;
+        padding:3px;
+        
+    }
+    .copyright-text{
+        color:white;   
+        text-align:center;
+        font-size:15px;
+        padding:3px;
+        text-decoration: none;
+    }
+    
+    .copyright-text-link{
+        color:white;   
+        text-decoration: none;
+    }
+    
+    .copyright-text-link:hover{
+        color:rgb(230, 92, 92);   
+        text-decoration: none;
+    }
+    
+}
+
+@media only screen and (max-width: 350px){
+    .about-section{
+        height:600px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding:10px;
+        background-color: rgb(162, 177, 191);
+        overflow: scroll;
+    }
+    
+    .about-logo{
+        width:100px;
+        transition: 1s;
+        cursor:pointer;
+    }
+    .about-section-heading{
+        font-weight: 600;
+        font-size:25px;
+        text-align: center;
+    }
+}
